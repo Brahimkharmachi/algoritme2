@@ -1,0 +1,43 @@
+ALGORITHM exercice3
+
+VAR
+
+ tab1 tab2 !: ARRAY_OF INTEGER[10];
+ i : INTEGER
+
+BEGIN
+ 
+ tab1:= {3,1,7,9}
+ tab2 :={ 2, 4, 1, 9, 3}
+
+//Tab1
+
+FOR i FROM 0 TO tab1.length-1   DO
+  IF (htab.containskey(tab1[i])); THEN
+    htab.insert (tab1[i],htab.get(tab1[i])+1);
+    ELSE
+    htab.insert(tab1[i],1);
+  END_IF
+END_FOR
+
+//Tab2
+
+FOR i FROM 0 TO tab1.length-1   DO
+ IF (htab.containskey(Tab2[i])); THEN
+    htab.insert (Tab2[i],htab.get(Tab2[i])+1);
+    ELSE
+    htab.insert(Tab2[i],1);
+  END_IF
+END_FOR
+
+//Sum
+
+
+FOR (auto x: htab )
+   IF (x.second == 1) THEN
+    sum = sum + x.first ;
+   END_IF
+END_FOR
+ 
+
+END
